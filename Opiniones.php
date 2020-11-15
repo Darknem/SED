@@ -22,7 +22,7 @@
 <header class="header">
  <nav>
      <div class="topnav">
-       <a href="index.php" class="actives"><img src="assets/images/logo2.png" alt="logo" class="logo"></a>
+       <a href="index.php" class="actives"><img src="assets/images/banco.png" alt="logo" class="logo"></a>
 
        <a href="#" class="hide-desktop options">
             <i class="fa fa-bars"></i>

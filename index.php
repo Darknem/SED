@@ -15,7 +15,7 @@
 <header class="header">
  <nav>
      <div class="topnav">
-       <a href="index.php" class="actives"><img src="assets/images/logo2.png" alt="logo" class="logo"></a>
+       <a href="index.php" class="actives"><img src="assets/images/banco.png" alt="logo" class="logo"></a>
 
        <a href="#" class="hide-desktop options">
             <i class="fa fa-bars"></i>
@@ -32,7 +32,7 @@
         
         <!--Contiene los botones para las cuentas-->
           <div class="login-container">         
-              <a href="#iniciar" class="last"><button type="submit" ><i class="fa fa-fw fa-user"></i>Iniciar sesion</button></a> 
+              <a href="login.php" class="last"><button type="submit" ><i class="fa fa-fw fa-user"></i>Iniciar sesion</button></a> 
             <a href="#registrarse" class="last"><button type="submit" ><i class="fa fa-fw fa-user"></i>Registrarse</button></a> 
           </div>
        </div>
@@ -47,7 +47,7 @@
 
         <!-- Imágenes y textos que tendrán encima de ellas-->
         <div class="mySlides fade">
-          <img src="assets/images/medicos.jpg" style="width:100%" alt="medicos">
+          <img src="assets/images/banco1.jpg" style="width:100%" alt="medicos">
           <div class="content">
             <h1>Servicios profesionales</h1>
             <p>Contamos con personal altamente calificado y con muchos años de experiencia.</p>
@@ -55,15 +55,15 @@
         </div>
       
         <div class="mySlides fade">
-          <img src="assets/images/medicos2.jpg" style="width:100%">
+          <img src="assets/images/banco2.jpg" style="width:100%">
           <div class="content">
             <h1>Resultados confiables</h1>
-            <p>Equipo médico de última generación para resultados más precisos y seguros.</p>
+            <p>Personal entrenado para transacciones rápidas y seguras.</p>
           </div>
         </div>
       
         <div class="mySlides fade">
-          <img src="assets/images/medicos3.jpg" style="width:100%">
+          <img src="assets/images/banco3.jpg" style="width:100%">
           <div class="content">
             <h1>Servicio 24/7</h1>
             <p>Atención médica 24 horas y 7 días a la semana.</p>
@@ -92,7 +92,7 @@
       <ul>
           <li>
               <article>
-                  <img src="assets/images/articulo 1.jpg" alt="cooke banner">
+                  <img src="assets/images/banco4.jpg" alt="cooke banner">
                   <h3>Lorem, ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempore! Velit quisquam
                       assumenda ea tempora, itaque neque suscipit! Voluptas, fugit!</p>
@@ -100,7 +100,7 @@
           </li>
           <li>
               <article>
-                  <img src="assets/images/articulo 3.jpg" alt="new banner">
+                  <img src="assets/images/banco4.jpg" alt="new banner">
                   <h3>Lorem, ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat vitae deleniti
                       inventore explicabo dolor laborum reiciendis fuga, libero quod.</p>
@@ -108,7 +108,7 @@
           </li>
           <li>
               <article>
-                  <img src="assets/images/articulo 4.jpg" alt="teach">
+                  <img src="assets/images/banco4.jpg" alt="teach">
                   <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod eum amet enim laborum
                       tenetur ullam consectetur illum natus dicta.</p>
@@ -117,7 +117,7 @@
 
           <li>
             <article>
-                <img src="assets/images/articulo 4.jpg" alt="teach">
+                <img src="assets/images/banco5.jpg" alt="teach">
                 <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod eum amet enim laborum
                     tenetur ullam consectetur illum natus dicta.</p>
@@ -126,7 +126,7 @@
 
         <li>
           <article>
-              <img src="assets/images/articulo 4.jpg" alt="teach">
+              <img src="assets/images/banco5.jpg" alt="teach">
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod eum amet enim laborum
                   tenetur ullam consectetur illum natus dicta.</p>
@@ -135,7 +135,7 @@
 
       <li>
         <article>
-            <img src="assets/images/articulo 4.jpg" alt="teach">
+            <img src="assets/images/banco5.jpg" alt="teach">
             <h3>Lorem ipsum dolor sit amet consectetur.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod eum amet enim laborum
                 tenetur ullam consectetur illum natus dicta.</p>
@@ -146,7 +146,7 @@
 </section>
 
 <footer>
-  <img src="assets/images/logo2.png" alt="logo" class="logo2">
+  <img src="assets/images/banco.png" alt="logo" class="logo2">
   <p>Copyright 2019. All right reserved</p>
 </footer>
  
