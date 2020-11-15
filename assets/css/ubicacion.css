@@ -1,0 +1,191 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+  }
+  
+  .header .topnav .hide-desktop{
+    display: none;
+  }
+  
+  
+  
+  /* Estilo de la barra de navegación */
+  .topnav {
+    overflow: hidden;
+    background-color: #64a3f7;
+    margin-top: 0px;
+    position: relative;
+  }
+  
+  .logo{
+   width: 50px;
+   margin: -10px;
+  }
+  
+  /* Links de la la barra de navegación */
+  
+  
+  .topnav a {
+    float: left;
+    display: flex;
+    color: white;
+    background-color: #64a3f7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav .last{
+    padding: 9px 16px;
+  }
+  
+  
+  /* Hover */
+  .topnav a:hover {
+    background-color: rgb(11, 197, 197);
+    color: white;
+  }
+  
+  
+  .topnav .login-container {
+    display: flex;
+    float: right;
+  }
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+  }
+  .topnav .login-container button {
+    
+    padding: 5px;
+    background: rgb(89, 230, 24);
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /******************************************************************************************************************/
+  .d2 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px ;
+    margin-bottom: 50px;
+  }
+  
+  .d2 .parrafo{
+    font-size: 25px;
+  }
+  /******************************************************************************************************************/
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    background-color: #64a3f7;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    color: white;
+  }
+  
+  footer .logo2{
+    width: 50px;
+  }
+  
+  /******************************************************************************************************************/
+  @media screen and (max-width: 768px) {
+    
+    .topnav .login-container {
+      float: none;
+    }
+  
+  .show-desktop {
+      display: block;
+  }
+  
+  .hide-desktop {
+      display: none;
+  }
+  
+  .hide-mobile {
+    display: none;
+  } 
+  
+  .header .topnav .hide-desktop{
+    display: block;
+  }
+  
+  .topnav a, .topnav .login-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width: 368px; /* adjust as needed (as long as it doesn't break the topnav) */
+    } 
+    
+    .topnav .last{
+      float: inline-end;
+    }
+    
+    .d2 ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 90px ;
+      margin-bottom: 50px;
+    }
+    
+    .d2 .parrafo{
+      font-size: 25px;
+      margin-bottom: 75px;
+    }  
+  
+    .imagmap{
+      margin-top: 25px;
+      width: auto;
+    }
+  
+    footer{
+      margin-top: 105px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 414px) {
+    .d2 ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 90px ;
+      margin-bottom: 50px;
+    }
+  
+    .imgmap{
+      width: fit-content;
+    }
+  
+  }
