@@ -17,10 +17,7 @@
      <div class="topnav">
        <a href="index.php" class="actives"><img src="assets/images/banco.png" alt="logo" class="logo"></a>
 
-       <a href="#" class="hide-desktop options">
-            <i class="fa fa-bars"></i>
-            <i class="fa fa-times hide-mobile"></i>
-        </a>
+
       <!--Esto se tiene que esconder con javascript-->
        <div class="hide-mobile menu" id="menu">
         <a href="index.php"><i class="fa fa-fw fa-home"></i>Inicio</a>

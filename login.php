@@ -11,11 +11,11 @@
   if(isset($_SESSION['rol'])){
     switch($_SESSION['rol']){
       case 1:
-        header('location: admin.php');
+        header('location: admin.php'); //El admin solo puede ver página de admin
       break;
 
       case 2:
-        header('location: user.php');
+        header('location: user.php'); //Usuario solo puede ver la página de usuario
       break;
 
       default:
@@ -37,11 +37,11 @@
         
         switch($_SESSION['rol']){
           case 1:
-            header('location: admin.php');
+            header('location: admin.php'); // Se redirige a administrador
           break;
     
           case 2:
-            header('location: user.php');
+            header('location: user.php'); // Se redirige a la página del usuario
           break;
     
           default:
@@ -49,7 +49,7 @@
 
     }else{
 
-      echo "El usuario o contraseña son incorrectos";
+      echo "El usuario o contraseña son incorrectos"; // Alerta que los datos son incorrectos
     }
   }
 ?>
