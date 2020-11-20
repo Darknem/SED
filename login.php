@@ -1,3 +1,59 @@
+<?php
+  include_once 'database.php';
+  session_start();
+
+  if(isset($_GET['cerrar_sesion'])){
+    session_unset();
+
+    session_destroy();
+  }
+
+  if(isset($_SESSION['rol'])){
+    switch($_SESSION['rol']){
+      case 1:
+        header('location: admin.php');
+      break;
+
+      case 2:
+        header('location: user.php');
+      break;
+
+      default:
+    }
+  }
+
+  if(isset($_POST['username']) && isset($_POST['password'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+     
+    $db = new Database();
+    $query = $db->connect()->prepare('SELECT*FROM usuarios WHERE username = :username AND password = :password');
+    $query->execute(['username' => $username, 'password' => $password]);
+
+    $row = $query ->fetch(PDO::FETCH_NUM);
+    if($row==true){
+        $rol = $row[3];
+        $_SESSION['rol']= $rol;
+        
+        switch($_SESSION['rol']){
+          case 1:
+            header('location: admin.php');
+          break;
+    
+          case 2:
+            header('location: user.php');
+          break;
+    
+          default:
+        }
+
+    }else{
+
+      echo "El usuario o contraseña son incorrectos";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +62,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sign up</title>
+    <title>Sign In</title>
 </head>
 <body>
    <!--El header contiene barra de navegación, login rápido y botón para registrarse-->
@@ -35,7 +91,7 @@
    </header> 
 <body>
     <div class="bg-img">
-        <form action="login.php" style="border:1px solid transparent" method="post">
+        <form action="login.php" style="border:1px solid transparent" method="POST">
             <div class="container">
 
             <?php if(!empty($message)): ?>
@@ -46,10 +102,10 @@
               <hr>
           
               <label for="usuario"><b>Usuario</b></label>
-              <input type="text" placeholder="Ingrese usuario" name="usuario" required>
+              <input type="text" placeholder="Ingrese usuario" name="username" required>
           
               <label for="contraseña"><b>Contraseña</b></label>
-              <input type="password" placeholder="Ingrese contraseña" name="contrasena" required>
+              <input type="password" placeholder="Ingrese contraseña" name="password" required>
           
               <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -57,7 +113,7 @@
           
               <div class="clearfix">
                <a href="index.php"> <button type="button" class="cancelbtn">Cancel</button></a>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="signupbtn">Sign In</button>
               </div>
             </div>
           </form>
