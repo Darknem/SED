@@ -19,7 +19,7 @@ class Database{
     function connect(){
     
         try{
-            
+            //PDO para evitar inyecciones SQL - OWASP 1
             $connection = "mysql:host=" . $this->host . ";dbname=" . $this->db . ";charset=" . $this->charset;
             $options = [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,

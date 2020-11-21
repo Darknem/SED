@@ -73,12 +73,12 @@ if(!isset($_SESSION['rol'])){
       <div class="card card-body">
         <form action="save_task.php" method="POST">
           <div class="form-group">
-            <input type="text" name="title" class="form-control" placeholder="Título" autofocus>
+            <input type="text" name="title" class="form-control" placeholder="Título" autofocus autocomplete="off" disabled="disabled">
           </div>
           <div class="form-group">
-            <textarea name="description" rows="2" class="form-control" placeholder="Descripción"></textarea>
+            <textarea name="description" rows="2" class="form-control" placeholder="Descripción" autocomplete="off" disabled="disabled"></textarea>
           </div>
-          <input type="submit" name="save_task" class="btn btn-success btn-block" value="Publicar">
+          
         </form>
       </div>
     </div>
@@ -86,10 +86,10 @@ if(!isset($_SESSION['rol'])){
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Título</th>
-            <th>Descripción</th>
-            <th>Fecha</th>
-            <th>Opciones</th>
+            <th>Titular</th>
+            <th>Número de tarjeta</th>
+            <th>Fecha de creación</th>
+            
           </tr>
         </thead>
         <tbody>
@@ -104,12 +104,7 @@ if(!isset($_SESSION['rol'])){
             <td><?php echo $row['description']; ?></td>
             <td><?php echo $row['created']; ?></td>
             <td>
-              <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
-                <i class="fas fa-marker"></i>
-              </a>
-              <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
-                <i class="far fa-trash-alt"></i>
-              </a>
+              
             </td>
           </tr>
           <?php } ?>

@@ -2,6 +2,7 @@
   include_once 'database.php';
   session_start();
 
+  //Destruir la sesión OWASP 2
   if(isset($_GET['cerrar_sesion'])){
     session_unset();
 
@@ -97,12 +98,9 @@
             <?php if(!empty($message)): ?>
              <p> <?= $message ?></p>
             <?php endif; ?>
-              <h1>Sign In</h1>
               <p>Sign in to you account.</p>
               <hr>
-          
-              <label for="usuario"><b>Usuario</b></label>
-              <input type="text" placeholder="Ingrese usuario" name="username" required>
+              <input type="text" placeholder="Ingrese usuario" name="username" required autocomplete="off"> <!-- Se quita autocompletado OWASP 3-->
           
               <label for="contraseña"><b>Contraseña</b></label>
               <input type="password" placeholder="Ingrese contraseña" name="password" required>

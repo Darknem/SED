@@ -19,7 +19,7 @@ if (isset($_POST['update'])) {
   $title= $_POST['title'];
   $description = $_POST['description'];
 
-  $query = "UPDATE opinion set title = '$title', description = '$description' WHERE id=$id";
+  $query = "UPDATE opinion set title = '$title', description ='$description' WHERE id=$id";
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Task Updated Successfully';
   $_SESSION['message_type'] = 'warning';

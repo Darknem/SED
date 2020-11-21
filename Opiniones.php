@@ -38,10 +38,7 @@
         <!--<a href="#contact"><i class="fa fa-fw fa-phone"></i>Contacto</a>-->
         
         <!--Contiene los botones para las cuentas-->
-          <div class="login-container">         
-              <a href="#iniciar" class="last"><button type="submit" ><i class="fa fa-fw fa-user"></i>Iniciar sesion</button></a> 
-            <a href="#registrarse" class="last"><button type="submit" ><i class="fa fa-fw fa-user"></i>Registrarse</button></a> 
-          </div>
+          
        </div>
      </div>
  </nav>
@@ -67,10 +64,10 @@
       <div class="card card-body">
         <form action="save_task.php" method="POST">
           <div class="form-group">
-            <input type="text" name="title" class="form-control" placeholder="Título" autofocus>
+            <input type="text" name="title" class="form-control" placeholder="Título" autofocus autocomplete="off">
           </div>
           <div class="form-group">
-            <textarea name="description" rows="2" class="form-control" placeholder="Descripción"></textarea>
+            <textarea name="description" rows="2" class="form-control" placeholder="Descripción" autocomplete="off"></textarea>
           </div>
           <input type="submit" name="save_task" class="btn btn-success btn-block" value="Publicar">
         </form>
